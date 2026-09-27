@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Nirmala UI", system-ui, sans-serif;
+  --color-navy: #14375e;
+  --color-ink: #1b2f45;
+  --color-muted: #5b6b7c;
+  --color-line: #d5dde6;
+  --color-low: #2e7d3a;
+  --color-mod: #d99612;
+  --color-high: #c2510f;
+  --color-crit: #b3261e;
+  --color-violet: #5846b5;
+  --color-teal: #0e7c86;
+  --color-amber: #b76e00;
+}
+html, body, #root { height: 100%; }
+body { background: #eef2f7; color: var(--color-ink); }
+.hi { font-family: "Nirmala UI", "Segoe UI", sans-serif; }
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(179,38,30,.55) } 100% { box-shadow: 0 0 0 10px rgba(179,38,30,0) } }
+.pulse { animation: pulse-ring 1.4s infinite; }
+@keyframes rise { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+.rise { animation: rise .35s ease-out both; }

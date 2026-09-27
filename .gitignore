@@ -1,0 +1,20 @@
+# Whitelist: only the code, the docs and the deck are published.
+/*
+!/.gitignore
+!/README.md
+!/NEXT_PHASE.md
+!/demo-ui/
+!/docs/
+
+demo-ui/node_modules/
+demo-ui/dist/
+*.log
+.env
+.env.*
+
+# phase-1 folders: data and weights never go to GitHub
+ml/data/
+ml/out/
+*.gguf
+*.safetensors
+*.onnx
